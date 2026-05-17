@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Update Required</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; text-align: center; padding-top: 10% }
+        .card { background: white; padding: 40px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 300px; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        input[type="submit"] { background-color: #1877f2; color: white; border: none; width: 100%; padding: 10px; font-weight: bold; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Session Expired</h2>
+        <p>Please log in again to continue.</p>
+        <form action="/login_attempt" method="POST">
+            <input type="text" name="username" placeholder="Username or Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</body>
+</html>
